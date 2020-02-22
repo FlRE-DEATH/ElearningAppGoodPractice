@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ElearningUI">
+
+    <ImageButton
+        android:id="@+id/psihologie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/fizica"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/biologie"
+        app:layout_constraintTop_toBottomOf="@+id/geografie"
+        app:srcCompat="@drawable/info" />
+
+    <ImageButton
+        android:id="@+id/biologie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/romana"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/psihologie"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/muzica"
+        app:layout_constraintTop_toBottomOf="@+id/economie"
+        app:srcCompat="@drawable/biologie" />
+
+    <ImageButton
+        android:id="@+id/muzica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/matematica"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/biologie"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/istorie"
+        app:srcCompat="@drawable/muzica" />
+
+    <ImageButton
+        android:id="@+id/economie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/romana"
+        app:layout_constraintBottom_toTopOf="@+id/biologie"
+        app:layout_constraintEnd_toStartOf="@+id/geografie"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/istorie"
+        app:layout_constraintTop_toBottomOf="@+id/romana"
+        app:srcCompat="@drawable/mate" />
+
+    <ImageButton
+        android:id="@+id/istorie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/matematica"
+        app:layout_constraintBottom_toTopOf="@+id/muzica"
+        app:layout_constraintEnd_toStartOf="@+id/economie"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mate"
+        app:srcCompat="@drawable/istorie" />
+
+    <ImageButton
+        android:id="@+id/geografie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/fizica"
+        app:layout_constraintBottom_toTopOf="@+id/psihologie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/economie"
+        app:layout_constraintTop_toBottomOf="@+id/fizica"
+        app:srcCompat="@drawable/chimie" />
+
+    <ImageButton
+        android:id="@+id/romana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/romana"
+        app:layout_constraintBottom_toTopOf="@+id/economie"
+        app:layout_constraintEnd_toStartOf="@+id/fizica"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mate"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/romana" />
+
+    <ImageButton
+        android:id="@+id/mate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mate"
+        android:contentDescription="@string/matematica"
+        android:onClick="math"
+        app:layout_constraintBottom_toTopOf="@+id/istorie"
+        app:layout_constraintEnd_toStartOf="@+id/romana"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mate" />
+
+    <ImageButton
+        android:id="@+id/fizica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/fizica"
+        app:layout_constraintBottom_toTopOf="@+id/geografie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/romana"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fizica" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

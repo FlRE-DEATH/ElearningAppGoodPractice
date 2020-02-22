@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ElearningAppGoodPractice</string>
+    <string name="please_provide_your_credentials">Please provide your credentials</string>
+    <string name="e_mail_address">E-mail address</string>
+    <string name="password">password</string>
+    <string name="log_in">Log in</string>
+    <string name="matematica">Matematica</string>
+    <string name="romana">romana</string>
+    <string name="fizica">fizica</string>
+    <string name="play">Play</string>
+</resources>
